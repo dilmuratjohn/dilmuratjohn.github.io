@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Space Shooter</title>
-    <link rel="shortcut icon" href="Data/favicon.ico">
-    <link rel="stylesheet" href="Data/style.css">
-    <script src="Data/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="name">Space Shooter</div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Fillsrceen</div>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Space Shooter</title>
+  <link rel="shortcut icon" href="Data/favicon.ico">
+  <link rel="stylesheet" href="Data/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="Data/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="Data/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="Data/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="Data/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="Data/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="Data/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="Data/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="Data/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="Data/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="Data/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Data/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="Data/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Data/favicon-16x16.png">
+  <link rel="manifest" href="Data/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="Data/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="name">Space Shooter</div>
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">Fillsrceen</div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
